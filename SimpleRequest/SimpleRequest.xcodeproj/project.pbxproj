@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		261E70152099597B00BFA79C /* ZXRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 261E70142099597B00BFA79C /* ZXRequestManager.m */; };
+		261E70192099A17D00BFA79C /* ZXSimpleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 261E70182099A17D00BFA79C /* ZXSimpleRequest.m */; };
+		261E70202099AC8500BFA79C /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261E701F2099AC8500BFA79C /* UserModel.m */; };
 		266EB709209950EF000D006C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB708209950EF000D006C /* AppDelegate.m */; };
 		266EB70C209950EF000D006C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266EB70B209950EF000D006C /* ViewController.m */; };
 		266EB70F209950EF000D006C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266EB70D209950EF000D006C /* Main.storyboard */; };
@@ -22,6 +24,10 @@
 		261E70132099597B00BFA79C /* ZXRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXRequestManager.h; sourceTree = "<group>"; };
 		261E70142099597B00BFA79C /* ZXRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXRequestManager.m; sourceTree = "<group>"; };
 		261E7016209959DA00BFA79C /* ZXRequestConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXRequestConstant.h; sourceTree = "<group>"; };
+		261E70172099A17D00BFA79C /* ZXSimpleRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXSimpleRequest.h; sourceTree = "<group>"; };
+		261E70182099A17D00BFA79C /* ZXSimpleRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXSimpleRequest.m; sourceTree = "<group>"; };
+		261E701E2099AC8500BFA79C /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		261E701F2099AC8500BFA79C /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		266EB704209950EF000D006C /* SimpleRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266EB707209950EF000D006C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		266EB708209950EF000D006C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,9 +59,20 @@
 			children = (
 				261E70132099597B00BFA79C /* ZXRequestManager.h */,
 				261E70142099597B00BFA79C /* ZXRequestManager.m */,
+				261E70172099A17D00BFA79C /* ZXSimpleRequest.h */,
+				261E70182099A17D00BFA79C /* ZXSimpleRequest.m */,
 				261E7016209959DA00BFA79C /* ZXRequestConstant.h */,
 			);
 			path = SimpleRequest;
+			sourceTree = "<group>";
+		};
+		261E701A2099ABD100BFA79C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				261E701E2099AC8500BFA79C /* UserModel.h */,
+				261E701F2099AC8500BFA79C /* UserModel.m */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		266EB6FB209950EF000D006C = {
@@ -83,6 +100,7 @@
 				266EB708209950EF000D006C /* AppDelegate.m */,
 				266EB70A209950EF000D006C /* ViewController.h */,
 				266EB70B209950EF000D006C /* ViewController.m */,
+				261E701A2099ABD100BFA79C /* Example */,
 				261E70122099593800BFA79C /* SimpleRequest */,
 				266EB70D209950EF000D006C /* Main.storyboard */,
 				266EB710209950F0000D006C /* Assets.xcassets */,
@@ -236,7 +254,9 @@
 			files = (
 				266EB70C209950EF000D006C /* ViewController.m in Sources */,
 				266EB717209950F0000D006C /* main.m in Sources */,
+				261E70202099AC8500BFA79C /* UserModel.m in Sources */,
 				266EB709209950EF000D006C /* AppDelegate.m in Sources */,
+				261E70192099A17D00BFA79C /* ZXSimpleRequest.m in Sources */,
 				261E70152099597B00BFA79C /* ZXRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

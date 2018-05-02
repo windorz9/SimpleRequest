@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UserModel.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UserModel *user = [[UserModel alloc] init];
+    user.access_token = 123456789;
+    user.methodType = ZXRequestMethodTypeGET;
+    
+    [user sendSimpleRequestWithCompletion:^(BOOL isSuccess, id response, NSString *message) {
+        if (isSuccess) {
+            NSLog(@"请求成功");
+        } else {
+            NSLog(@"请求失败, error = %@", message);
+        }
+    }];
+    
+    
 }
 
 
